@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getAllThoughts());
-  });
+  },[])// eslint-disable-line react-hooks/exhaustive-deps
   const thoughts = useSelector((state) => state.thoughts);
   const [show, setShow] = useState(false);
   return (
