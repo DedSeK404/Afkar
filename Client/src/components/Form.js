@@ -15,7 +15,10 @@ const ThoughtForm = ({ setShow }) => {
   };
 
   const dispatch = useDispatch();
-  const [thoughtData, setThoughtData] = useState({});
+  const [thoughtData, setThoughtData] = useState({
+    name:"",
+    thought:""
+  });
   const handleChange = (e) => {
     setThoughtData({ ...thoughtData, [e.target.name]: e.target.value });
   };
@@ -23,16 +26,23 @@ const ThoughtForm = ({ setShow }) => {
   const handleSubmit = () => {
     if (thoughtData.name === "admin" && thoughtData.thought === "admin") {
       setThoughtData("");
+      setThoughtData({
+        name:"",
+        thought:""
+      });
       return setShow(true);
     }
-    setThoughtData("");
+   
     Object.keys(thoughtData).forEach((key) => {
       if (thoughtData[key] === "") {
         delete thoughtData[key];
       }
     });
     dispatch(postThought(thoughtData, start));
-
+    setThoughtData({
+      name:"",
+      thought:""
+    });
     window.scrollTo(0, document.body.scrollHeight);
   };
   return (
@@ -61,6 +71,7 @@ const ThoughtForm = ({ setShow }) => {
             name="name"
             type="text"
             placeholder="name@example.com"
+            value={thoughtData.name}
           />
         </FloatingLabel>
         <FloatingLabel
@@ -68,7 +79,7 @@ const ThoughtForm = ({ setShow }) => {
           label="ميساجك"
           onChange={handleChange}
         >
-          <Form.Control name="thought" type="text" placeholder="Password" />
+          <Form.Control name="thought" type="text" placeholder="Password" value={thoughtData.thought} />
         </FloatingLabel>
       </div>
       <Button
