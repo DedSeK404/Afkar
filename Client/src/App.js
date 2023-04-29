@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getAllThoughts());
-  }, []);
+  });
   const thoughts = useSelector((state) => state.thoughts);
   const [show, setShow] = useState(false);
   return (
