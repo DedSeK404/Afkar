@@ -1,0 +1,175 @@
+.Wall {
+  margin: auto;
+  padding: 10px;
+}
+.Note1 {
+  background-image: url(".././assets/Note1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note2 {
+  background-image: url(".././assets/Note2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note3 {
+  background-image: url(".././assets/Note3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note4 {
+  background-image: url(".././assets/Note4.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note5 {
+  background-image: url(".././assets/Note5.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note6 {
+  background-image: url(".././assets/Note6.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note7 {
+  background-image: url(".././assets/Note7.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note8 {
+  background-image: url(".././assets/Note8.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note9 {
+  background-image: url(".././assets/Note9.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note10 {
+  background-image: url(".././assets/Note10.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note11 {
+  background-image: url(".././assets/Note11.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.Note12 {
+  background-image: url(".././assets/Note12.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  min-height: 60vh;
+
+  overflow-wrap: break-word;
+  padding: 20%;
+  font-size: 2vw;
+}
+.top-to-btm {
+  position: relative;
+}
+.icon-position {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+.icon-style {
+  background: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+  animation: movebtn 4s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+  font-size: 3rem;
+}
+
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+

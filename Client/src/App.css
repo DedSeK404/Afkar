@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  font-family: "Dancing Script", cursive;
+}
+.Container {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: max-content;
+  background-image: url("./assets/Background.svg");
+  background-size: 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
