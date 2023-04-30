@@ -1,14 +1,12 @@
 .Wall {
   margin: auto;
   padding: 10px;
+  width: 30%;
 }
 .Note1 {
   background-image: url(".././assets/Note1.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -17,9 +15,6 @@
   background-image: url(".././assets/Note2.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -28,9 +23,6 @@
   background-image: url(".././assets/Note3.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -39,9 +31,6 @@
   background-image: url(".././assets/Note4.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -50,9 +39,6 @@
   background-image: url(".././assets/Note5.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -61,9 +47,6 @@
   background-image: url(".././assets/Note6.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -72,9 +55,6 @@
   background-image: url(".././assets/Note7.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -83,9 +63,6 @@
   background-image: url(".././assets/Note8.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -94,9 +71,6 @@
   background-image: url(".././assets/Note9.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -105,9 +79,6 @@
   background-image: url(".././assets/Note10.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -116,9 +87,6 @@
   background-image: url(".././assets/Note11.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -127,9 +95,6 @@
   background-image: url(".././assets/Note12.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
-  min-height: 60vh;
-
   overflow-wrap: break-word;
   padding: 20%;
   font-size: 2vw;
@@ -172,4 +137,3 @@
     transform: translateY(0px);
   }
 }
-

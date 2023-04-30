@@ -37,17 +37,17 @@ const Thought = ({ data, show }) => {
       )}
       <div className={data.style} style={{ rotate: `${data.rotate}deg` }}>
         {data.name === "مجهول" ? (
-          <h2 style={{ color: "darkGray" }}>{data.name}</h2>
+          <p style={{ color: "darkGray" }}>{data.name}</p>
         ) : data.role === "admin" ? (
-          <h2 style={{ color: "green", fontSize: "3rem" }}>{data.name}</h2>
+          <p style={{ color: "green" }}>{data.name}</p>
         ) : (
-          <h2 style={{ color: "#5E9EFF" }}>{data.name}</h2>
+          <p style={{ color: "#5E9EFF" }}>{data.name}</p>
         )}
 
         <p>{data.thought}</p>
-        <h6 style={{ color: "gray" }}>
+        <p style={{ color: "gray", fontSize: "1vw" }}>
           {data.creationDate.toString().slice(0, -5)}
-        </h6>
+        </p>
         {show ? (
           <Button
             onClick={() => dispatch(deletThought(data._id))}

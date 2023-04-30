@@ -16,8 +16,8 @@ const ThoughtForm = ({ setShow }) => {
 
   const dispatch = useDispatch();
   const [thoughtData, setThoughtData] = useState({
-    name:"",
-    thought:""
+    name: "",
+    thought: "",
   });
   const handleChange = (e) => {
     setThoughtData({ ...thoughtData, [e.target.name]: e.target.value });
@@ -27,12 +27,12 @@ const ThoughtForm = ({ setShow }) => {
     if (thoughtData.name === "admin" && thoughtData.thought === "admin") {
       setThoughtData("");
       setThoughtData({
-        name:"",
-        thought:""
+        name: "",
+        thought: "",
       });
       return setShow(true);
     }
-   
+
     Object.keys(thoughtData).forEach((key) => {
       if (thoughtData[key] === "") {
         delete thoughtData[key];
@@ -40,8 +40,8 @@ const ThoughtForm = ({ setShow }) => {
     });
     dispatch(postThought(thoughtData, start));
     setThoughtData({
-      name:"",
-      thought:""
+      name: "",
+      thought: "",
     });
     window.scrollTo(0, document.body.scrollHeight);
   };
@@ -79,12 +79,17 @@ const ThoughtForm = ({ setShow }) => {
           label="ميساجك"
           onChange={handleChange}
         >
-          <Form.Control name="thought" type="text" placeholder="Password" value={thoughtData.thought} />
+          <Form.Control
+            name="thought"
+            type="text"
+            placeholder="Password"
+            value={thoughtData.thought}
+          />
         </FloatingLabel>
       </div>
       <Button
         onClick={handleSubmit}
-        style={{ width: "100%", height: "70%", fontSize: "2rem" }}
+        style={{ width: "100%", height: "70%" }}
         variant="success"
       >
         نشر الفكرة أو الخواطر
