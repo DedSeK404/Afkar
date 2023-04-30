@@ -3,6 +3,10 @@
   padding: 10px;
   width: 30%;
 }
+.module h2 {
+  font-size: 1em;
+}
+
 .Note1 {
   background-image: url(".././assets/Note1.svg");
   background-repeat: no-repeat;
@@ -135,5 +139,15 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Wall {
+    margin: auto;
+    padding: 10px;
+    width: 150px;
+    height: 100px;
+    margin-top: -25%;
   }
 }

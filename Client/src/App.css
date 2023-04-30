@@ -11,9 +11,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-/* @media only screen and (max-width: 480px) {
-  p {
-    font-size: 16px;
-    color:red
-  }
-} */

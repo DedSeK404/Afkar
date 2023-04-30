@@ -49,7 +49,6 @@ const ThoughtForm = ({ setShow }) => {
     <div
       style={{
         width: "90%",
-
         display: "flex",
         gap: "10%",
         alignItems: "center",
@@ -57,10 +56,11 @@ const ThoughtForm = ({ setShow }) => {
         background: "white",
         borderRadius: "30px",
         margin: "2% auto",
+        height:"25%"
       }}
     >
       <img src={Logo} alt="Logo" style={{ width: "15vw" }} />
-      <div className="d-flex flex-column" style={{ width: "100%" }}>
+      <div className="d-flex flex-column" style={{ width: "150%" }}>
         <FloatingLabel
           controlId="floatingInput"
           label="اسمك"
