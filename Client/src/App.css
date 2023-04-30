@@ -6,6 +6,7 @@
   width: 100vw;
   min-height: 100vh;
   max-height: max-content;
+  height: fit-content;
   background-image: url("./assets/Background.svg");
   background-size: 20%;
   display: flex;
