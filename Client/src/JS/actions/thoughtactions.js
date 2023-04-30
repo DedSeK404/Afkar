@@ -7,7 +7,9 @@ import {
 } from "../actiontypes/Thoughttypes";
 import axios from "axios";
 
-const baseURL = "http://localhost:4500";
+// use this url if you want to use the app locally ↓↓↓
+// const baseURL = "http://localhost:4500";
+const baseURL = "https://afkar.onrender.com"
 
 /**
  * @route POST /Thought/add
