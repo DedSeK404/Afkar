@@ -47,7 +47,7 @@ const Thought = ({ data, show }) => {
         <p>{data.thought}</p>
         <p style={{ color: "gray", fontSize: "1vw" }}>
           {data.creationDate.toString().slice(0, -5)}
-        </p>
+        </p> 
         {show ? (
           <Button
             onClick={() => dispatch(deletThought(data._id))}

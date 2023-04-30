@@ -27,14 +27,14 @@ const LiveThoughts = ({ events, show }) => {
             style={{ rotate: `${events.rotate}deg` }}
           >
             {events.name === "مجهول" ? (
-              <h2 style={{ color: "darkGray" }}>{events.name}</h2>
+              <p style={{ color: "darkGray" }}>{events.name}</p>
             ) : (
-              <h2 style={{ color: "#5E9EFF" }}>{events.name}</h2>
+              <p style={{ color: "#5E9EFF" }}>{events.name}</p>
             )}
             <p>{events.thought}</p>
-            <h6 style={{ color: "gray" }}>
+            <p style={{ color: "gray", fontSize: "1vw" }}>
               {events.creationDate.toString().slice(0, -37)}
-            </h6>
+            </p>
             {show ? (
               <Button
                 onClick={() => dispatch(deletThought(events._id))}
