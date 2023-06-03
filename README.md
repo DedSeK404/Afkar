@@ -130,8 +130,8 @@ To see all the functionalities and use-case scenarios of my app please watch thi
 <br />
 Here is a screenshot from the app:
 <div align="center">
-  <a href="https://i.ibb.co/LtdYvxH/page.jpg">
-    <img src="https://i.ibb.co/LtdYvxH/page.jpg" alt="Logo" width="1366" height="1040">
+  <a href="https://i.ibb.co/KxChBvB/page.jpg">
+    <img src="https://i.ibb.co/KxChBvB/page.jpg" alt="Logo" width="1366" height="1040">
   </a>
 </div>
 
