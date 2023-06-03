@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://i.ibb.co/mFzBb45/logo.png">
-    <img src="https://i.ibb.co/mFzBb45/logo.png" alt="Logo" width="350" height="150">
+    <img src="https://i.ibb.co/mFzBb45/logo.png" alt="Logo" width="350" height="350">
   </a>
 
   <h3 align="center">Afkar</h3>
