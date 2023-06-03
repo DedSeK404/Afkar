@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllThoughts } from "./JS/actions/thoughtactions";
 import LiveThoughts from "./components/LiveThoughts";
+import Spinner from "react-bootstrap/Spinner";
 
 const app = new Realm.App({ id: "afkar-nzlxp" });
 
@@ -32,16 +33,39 @@ function App() {
 
   useEffect(() => {
     dispatch(getAllThoughts());
-  },[])// eslint-disable-line react-hooks/exhaustive-deps
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const thoughts = useSelector((state) => state.thoughts);
+  const loading = useSelector((state) => state.loading);
   const [show, setShow] = useState(false);
+  console.log(loading);
   return (
     <div className="Container">
       <div className="Container">
         <ThoughtForm setShow={setShow} />
-        {thoughts.map((thought) => (
-          <Thought data={thought} key={thought._id} show={show} />
-        ))}
+        {loading ? (
+          <Spinner
+            style={{
+              color: "white",
+              width: "250px",
+              height: "250px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "auto",
+            }}
+            animation="border"
+            role="status"
+          >
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
+        ) : (
+          <>
+            {thoughts.map((thought) => (
+              <Thought data={thought} key={thought._id} show={show} />
+            ))}
+          </>
+        )}
+
         {!!user &&
           events.map((thought) => (
             <LiveThoughts
