@@ -53,7 +53,7 @@
 
 [![Product Name Screen Shot][product-screenshot]]
 
-Afkarna is a wall where anyone can share their thoughts on it, anyone can right a note and post it on the wall of thoughts for everyone to see.
+Afkar is a wall where anyone can share their thoughts on it, anyone can right a note and post it on the wall of thoughts for everyone to see.
 The note will be hanged on the wall forever, it will contain the writer's name, thought and publish date.
 Afkarna is a full-stack MERN app which also includes the Mongodb Realm SDK (which is an app of mongodb that allows realtime data management
 therefor people who are logged in the server will see Live updates on the wall ).
